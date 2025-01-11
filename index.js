@@ -25,14 +25,14 @@ app.use(limiter);
 app.set("etag", false);
 
 // MongoDb
-mongoose
+/*mongoose
   .connect("mongodb://localhost:27017/", { autoIndex: true })
   .then(() => {
     console.log("Database connected");
   })
   .catch((err) => {
     console.log("Database Connection Error: " + err);
-  });
+  });*/
 
 app.use(router);
 
